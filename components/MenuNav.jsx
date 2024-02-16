@@ -13,13 +13,13 @@ export default function MenuNav() {
         const handleResize = () => {
             setWindowWidth(window.innerWidth);
         };
-        // Écoute des changements de taille de la fenêtre pour mettre à jour la largeur de la fenêtre
+        
         window.addEventListener('resize', handleResize);
-        // Mettre à jour la largeur de la fenêtre lors du montage initial du composant
+        
         setWindowWidth(window.innerWidth);
 
         return () => {
-            // Nettoyer l'écouteur d'événement lors du démontage du composant
+            
             window.removeEventListener('resize', handleResize);
         };
     }, []);
