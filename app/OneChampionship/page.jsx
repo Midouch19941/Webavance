@@ -1,5 +1,5 @@
 import React from 'react';
-import './page.css'; // Import the CSS file containing the styles
+import './page.css';
 
 export default function OneChampionship() {
   return (
